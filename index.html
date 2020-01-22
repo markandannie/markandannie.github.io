@@ -6,6 +6,7 @@
 <script async custom-element="amp-accordion" src="https://cdn.ampproject.org/v0/amp-accordion-0.1.js"></script>
 <script async custom-element="amp-sidebar" src="https://cdn.ampproject.org/v0/amp-sidebar-0.1.js"></script>
 <script async custom-element="amp-google-document-embed" src="https://cdn.ampproject.org/v0/amp-google-document-embed-0.1.js"></script>
+<script async custom-element="amp-iframe" src="https://cdn.ampproject.org/v0/amp-iframe-0.1.js"></script>
 <title>Annie and Mark are Getting Hitched</title>
 <link rel="canonical" href="https://markandannie.camp">
 <meta name="description" content="Come celebrate with us!">
@@ -269,11 +270,11 @@
 <section id="architecture" on="expand:architecture.scrollTo(duration=1000)">
     <header class="sectionTitle"><h1>Architecture</h1></header>
     <article>
-        <amp-google-document-embed src="https://docs.google.com/spreadsheets/d/17c6lBYkNtdiD44w66Kn_5JvMgTXZALwh1MnBOybNuBw/htmlembed/sheet?gid=1869222851"
-          width="8.5"
-          height="11"
-          layout="responsive">
-        </amp-google-document-embed>
+        <amp-iframe width="600" height="1200"
+            sandbox="allow-scripts allow-same-origin"
+            layout="responsive"
+            src="https://docs.google.com/spreadsheets/d/17c6lBYkNtdiD44w66Kn_5JvMgTXZALwh1MnBOybNuBw/htmlembed/sheet?gid=1869222851">
+        </amp-iframe>
     </article>
 </section>
 
