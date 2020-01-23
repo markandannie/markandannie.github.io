@@ -5,9 +5,7 @@
 <script async src="https://cdn.ampproject.org/v0.js"></script>
 <script async custom-element="amp-accordion" src="https://cdn.ampproject.org/v0/amp-accordion-0.1.js"></script>
 <script async custom-element="amp-sidebar" src="https://cdn.ampproject.org/v0/amp-sidebar-0.1.js"></script>
-<script async custom-element="amp-google-document-embed" src="https://cdn.ampproject.org/v0/amp-google-document-embed-0.1.js"></script>
-<script async custom-element="amp-iframe" src="https://cdn.ampproject.org/v0/amp-iframe-0.1.js"></script>
-<title>Annie and Mark are Getting Hitched</title>
+<title>Annie and Mark are Getting Hitched!</title>
 <link rel="canonical" href="https://markandannie.camp">
 <meta name="description" content="Come celebrate with us!">
 <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
@@ -240,15 +238,15 @@
 <body>
 
 <amp-sidebar id="sidebar1" layout="nodisplay" side="left" on="sidebarClose:hamburger.toggleClass(class=clicked)">
-  <a class="container" href="#architecture" on="tap:accordion.expand(section='architecture'),architecture.scrollTo(duration=1000)"><h1>Architecture</h1></a>
-  <a class="container" href="#landscape" on="tap:accordion.expand(section='landscape'),landscape.scrollTo(duration=1000)"><h1>Landscape</h1></a>
-  <a class="container" href="#rocks" on="tap:accordion.expand(section='rocks'),rocks.scrollTo(duration=1000)"><h1>Rocks</h1></a>
-  <a class="container" href="#language" on="tap:accordion.expand(section='language'),language.scrollTo(duration=1000)"><h1>Language</h1></a>
-  <a class="container" href="#shows" on="tap:accordion.expand(section='shows'),shows.scrollTo(duration=1000)"><h1>Shows</h1></a>
-  <a class="container" href="#making" on="tap:accordion.expand(section='making'),making.scrollTo(duration=1000)"><h1>Making</h1></a>
-  <a class="container" href="#about" on="tap:accordion.expand(section='about'),about.scrollTo(duration=1000)"><h1>About</h1></a>
+  <a class="container" href="#rsvp" on="tap:accordion.expand(section='architecture'),architecture.scrollTo(duration=1000)"><h1>RSVP</h1></a>
+  <a class="container" href="#ranch" on="tap:accordion.expand(section='landscape'),landscape.scrollTo(duration=1000)"><h1>Flying Horseshoe Ranch</h1></a>
+  <a class="container" href="#lodging" on="tap:accordion.expand(section='rocks'),rocks.scrollTo(duration=1000)"><h1>Lodging</h1></a>
+  <a class="container" href="#travel" on="tap:accordion.expand(section='language'),language.scrollTo(duration=1000)"><h1>Travel</h1></a>
+  <a class="container" href="#schedule" on="tap:accordion.expand(section='shows'),shows.scrollTo(duration=1000)"><h1>Schedule</h1></a>
+  <a class="container" href="#registry" on="tap:accordion.expand(section='making'),making.scrollTo(duration=1000)"><h1>Registry</h1></a>
+  <a class="container" href="#faq" on="tap:accordion.expand(section='about'),about.scrollTo(duration=1000)"><h1>FAQ</h1></a>
   <a class="container cv" href="https://drive.google.com/open?id=1uZegVp08r5wzthw5j2SpJgsxYM3A-WWo" target="_blank"><h1>Download CV</h1></a>
-  <div class="contact"><h1>aldrich.annelise@gmail.com</h1></div>
+  <div class="contact"><h1>help@markandannie.camp</h1></div>
 </amp-sidebar>
 
 <header>
@@ -256,31 +254,23 @@
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" role="presentation"><rect x="30" y="47" width="40" height="6" rx="1" ry="1"/><rect x="30" y="36.691" width="40" height="6" rx="1" ry="1"/><rect x="30" y="57.309" width="40" height="6" rx="1" ry="1"/></svg>
   </button>
 </header>
-
 <div class="title" role="button" tabindex="1" on="tap:sidebar1.toggle, hamburger.toggleClass(class=clicked)"><div class="titleThin">Annie + Mark:</div> 25 July</div>
 <div class="spacer" id="topPage"></div>
 <div class="background">
-  <amp-img alt="Background Art"
-    src="img/artbackground.jpg"
-    layout="fill">
+  <amp-img alt="Background" src="img/background.jpg" layout="fill"></amp-img>
 </div>
 
 <amp-accordion id="accordion" disable-session-states expand-single-section>
 
-<section id="architecture" on="expand:architecture.scrollTo(duration=1000)">
-    <header class="sectionTitle"><h1>Architecture</h1></header>
+<section id="rsvp" on="expand:rsvp.scrollTo(duration=1000)">
+    <header class="sectionTitle"><h1>RSVP</h1></header>
     <article>
-        <amp-iframe width="600" height="1200"
-            sandbox="allow-scripts allow-same-origin"
-            layout="responsive"
-            src="https://docs.google.com/spreadsheets/d/17c6lBYkNtdiD44w66Kn_5JvMgTXZALwh1MnBOybNuBw/htmlembed/sheet?gid=1869222851">
-        </amp-iframe>
+
     </article>
 </section>
 
-<section id="landscape" on="expand:landscape.scrollTo(duration=1000)">
-    <header class="sectionTitle"><h1>Landscape</h1></header>
-
+<section id="ranch" on="expand:ranch.scrollTo(duration=1000)">
+    <header class="sectionTitle"><h1>Flying Horseshoe Ranch</h1></header>
     <article>
 	<p><a href="https://www.ggnltd.com/university-of-washington-life-sciences-building" target="_blank">UW LIFE SCIENCES - GUSTAFSON GUTHRIE NICHOL</a><br><br>
 		Concept Design through Construction Documentation, project manager & project designer. Close research with the University of Washington Biology Department and Campus Architects to provide an important campus connector that also showcased the departments interests.
@@ -303,712 +293,37 @@
          <figcaption>Interior Court</figcaption>
        </figure>
     </p>
-	<p><a href="https://www.bizjournals.com/seattle/news/2019/10/15/seattle-children-s-opens-pediatric-research.html" target="_blank">BUILDING CURE - GGN/AEDAS/FLAD</a><br><br>
-		Working during early concept through design development, I was a project manager and project designer at GGN. We Worked closely with AEDAS and FLAD  to design an urban plaza, rooftop garden, and sidewalk design.
-    <figure class="small">
-       <amp-img alt="Street View"
-         src="img/CURE_1.jpg"
-         width="1200"
-         height="675"
-         layout="responsive">
-       </amp-img>
-       <figcaption>Street View of Plaza. Photo Credit Seattle Children's Research Institute</figcaption>
-     </figure>
-     <figure class="small">
-        <amp-img alt="Plaza View"
-          src="img/CURE_2.jpg"
-          width="1024"
-          height="682"
-          layout="responsive">
-        </amp-img>
-        <figcaption>Entry Plaza along Stewart Street. Photo Credit Seattle Children's Research Institute</figcaption>
-      </figure>
-      <figure class="small">
-         <amp-img alt="Plan View"
-           src="img/CURE_3.jpg"
-           width="1068"
-           height="619"
-           layout="responsive">
-         </amp-img>
-         <figcaption>Rendered Plan of the design</figcaption>
-       </figure>
-     </p>
-	<p><a href="https://www.ggnltd.com/civic-park-at-hemisfair" target="_blank">CIVIC PARK AT HEMISFAIR - GGN</a><br><br>
-	    Working during early concept and schematic design on GGN's team, we desiged a Civic Park in San Antonio, TX. The process included public design and community outreach, consultant management, and extensive research of the local geology and flora.
-      <figure class="small">
-         <amp-img alt="Plan View"
-           src="img/HEMI_4.jpg"
-           width="1200"
-           height="1680"
-           layout="responsive">
-         </amp-img>
-         <figcaption>Rendered plan of the park's design</figcaption>
-       </figure>
-       <figure class="small">
-          <amp-img alt="Landscape Research"
-            src="img/HEMI_5.jpg"
-            width="1200"
-            height="1551"
-            layout="responsive">
-          </amp-img>
-          <figcaption>Research of regional geology and resultant human use yielded right insight into the vernacular landforms</figcaption>
-        </figure>
-       <figure class="small">
-          <amp-img alt="Fountain View"
-            src="img/HEMI_1.jpg"
-            width="1200"
-            height="621"
-            layout="responsive">
-          </amp-img>
-          <figcaption>View of the park's main entrance, a fountain plaza. Rendering by Studio 216</figcaption>
-        </figure>
-      <figure class="small">
-         <amp-img alt="Plaza View"
-           src="img/HEMI_2.jpg"
-           width="1200"
-           height="675"
-           layout="responsive">
-         </amp-img>
-         <figcaption>View of the park's heart, a performance space and promenade. Rendering by Studio 216</figcaption>
-       </figure>
-        <figure class="small">
-           <amp-img alt="Pool View"
-             src="img/HEMI_3.jpg"
-             width="1200"
-             height="675"
-             layout="responsive">
-           </amp-img>
-           <figcaption>View of the park's quiet, shady pools. Rendering by Studio 216</figcaption>
-         </figure>
-    </p>
     </article>
 </section>
 
-<section id="rocks" on="expand:rocks.scrollTo(duration=1000)">
-    <header class="sectionTitle"><h1>Rocks</h1></header>
-
+<section id="lodging" on="expand:lodging.scrollTo(duration=1000)">
+    <header class="sectionTitle"><h1>Lodging</h1></header>
     <article>
-      <p>TRAVELLING THROUGH THE WEST<br><br>
-        It took me most of my life to realize that in the landscape is where I'm happiest. For the last 5 years, I've been spending
-        as much time as I can covering ground, learning as I go, and trying to assemble a whole understanding of the many geologic
-        processes that have shaped the western half of the North American plate. I've tried to collect some of the moments that stand
-        out as the most fascinating to me because of their strangeness. Images appear from roughly NW to SE.
-        <figure class="small">
-           <amp-img alt="Shi Shi Beach"
-             src="img/ShiShi1.jpg"
-             width="1200"
-             height="900"
-             layout="responsive">
-           </amp-img>
-           <figcaption>Shi Shi Beach: Fingers in the sand, same grain as the stacks in the water</figcaption>
-         </figure>
-         <figure class="small">
-            <amp-img alt="Mt.Pilchuck"
-              src="img/Pilchuck.jpg"
-              width="1200"
-              height="1600"
-              layout="responsive">
-            </amp-img>
-            <figcaption>Mt.Pilchuck: Relentless slabs and layers</figcaption>
-          </figure>
-          <figure class="small">
-             <amp-img alt="Gothic Basin"
-               src="img/GothicBasin1.jpg"
-               width="1600"
-               height="900"
-               layout="responsive">
-             </amp-img>
-             <figcaption>Gothic Basin: Exposed rocks, smooth and broken</figcaption>
-           </figure>
-          <figure class="small">
-             <amp-img alt="Mt.Stuart"
-               src="img/Stuart.jpg"
-               width="1200"
-               height="900"
-               layout="responsive">
-             </amp-img>
-             <figcaption>Mt. Stuart: Such crenelated rock</figcaption>
-           </figure>
-           <figure class="small">
-              <amp-img alt="Yakima River Canyon"
-                src="img/YakimaCanyon.jpg"
-                width="1200"
-                height="1200"
-                layout="responsive">
-              </amp-img>
-              <figcaption>Yakima River Canyon: Folds, erosion, basalt</figcaption>
-            </figure>
-            <figure class="small">
-               <amp-img alt="Painted Hills"
-                 src="img/PaintedHills.jpg"
-                 width="1200"
-                 height="900"
-                 layout="responsive">
-               </amp-img>
-               <figcaption>Painted Hills: Bands of color</figcaption>
-             </figure>
-             <figure class="small">
-                <amp-img alt="Blue Hole"
-                  src="img/BlueHole.jpg"
-                  width="1200"
-                  height="900"
-                  layout="responsive">
-                </amp-img>
-                <figcaption>Blue Hole: An unusual color in the desert</figcaption>
-              </figure>
-              <figure class="small">
-                 <amp-img alt="Devil's Postpile"
-                   src="img/Devils.jpg"
-                   width="1200"
-                   height="800"
-                   layout="responsive">
-                 </amp-img>
-                 <figcaption>Devil's Postpile: Basalt formation east of the Sierra Nevada mountains</figcaption>
-               </figure>
-               <figure class="small">
-                  <amp-img alt="California Coast"
-                    src="img/CACoast.jpg"
-                    width="1200"
-                    height="900"
-                    layout="responsive">
-                  </amp-img>
-                  <figcaption>Pfeiffer Beach: Folded layers</figcaption>
-                </figure>
-                <figure class="small">
-                   <amp-img alt="Yosemite"
-                     src="img/Yosemite4.jpg"
-                     width="1200"
-                     height="1200"
-                     layout="responsive">
-                   </amp-img>
-                   <figcaption>Yosemite, Olmstead Point: Sculpted and errant rocks</figcaption>
-                 </figure>
-                 <figure class="small">
-                    <amp-img alt="Mono Lake"
-                      src="img/MonoLake.jpg"
-                      width="1200"
-                      height="900"
-                      layout="responsive">
-                    </amp-img>
-                    <figcaption>Mono Lake: Tufas and salt</figcaption>
-                  </figure>
-                  <figure class="small">
-                     <amp-img alt="King's Canyon"
-                       src="img/KingsCanyon1.jpg"
-                       width="800"
-                       height="1200"
-                       layout="responsive">
-                     </amp-img>
-                     <figcaption>King's Canyon: Contrasting rock types</figcaption>
-                   </figure>
-                   <figure class="small">
-                      <amp-img alt="King's Canyon"
-                        src="img/KingsCanyon3.jpg"
-                        width="1200"
-                        height="900"
-                        layout="responsive">
-                      </amp-img>
-                      <figcaption>King's Canyon: Major folding</figcaption>
-                    </figure>
-                    <figure class="small">
-                       <amp-img alt="Mineral King"
-                         src="img/MineralKing2.jpg"
-                         width="1200"
-                         height="900"
-                         layout="responsive">
-                       </amp-img>
-                       <figcaption>Mineral King: Many shapes and colors</figcaption>
-                     </figure>
-                     <figure class="small">
-                        <amp-img alt="Kearsarge Pass"
-                          src="img/OnionValley.jpg"
-                          width="1200"
-                          height="900"
-                          layout="responsive">
-                        </amp-img>
-                        <figcaption>Kearsarge Pass: Tarns and cirques</figcaption>
-                      </figure>
-                      <figure class="small">
-                         <amp-img alt="Alabama Hills"
-                           src="img/Alabama3.jpg"
-                           width="1200"
-                           height="900"
-                           layout="responsive">
-                         </amp-img>
-                         <figcaption>Alabama Hills: Haunting forms at the foot of Mt. Whitney</figcaption>
-                       </figure>
-                       <figure class="small">
-                          <amp-img alt="Death Valley"
-                            src="img/DeathValley1.jpg"
-                            width="1149"
-                            height="861"
-                            layout="responsive">
-                          </amp-img>
-                          <figcaption>Death Valley: The flatest, lowest place</figcaption>
-                        </figure>
-                        <figure class="small">
-                           <amp-img alt="Death Valley"
-                             src="img/DeathValley2.jpg"
-                             width="1200"
-                             height="1002"
-                             layout="responsive">
-                           </amp-img>
-                           <figcaption>Death Valley: Uplift and erosion</figcaption>
-                         </figure>
-                         <figure class="small">
-                            <amp-img alt="Charlie Brown Highway"
-                              src="img/CharlieBrown.jpg"
-                              width="1200"
-                              height="1002"
-                              layout="responsive">
-                            </amp-img>
-                            <figcaption>Charlie Brown Highway Cut: Ash deposits and reverse faults</figcaption>
-                          </figure>
-                          <figure class="small">
-                             <amp-img alt="Zion"
-                               src="img/Zion.jpg"
-                               width="1200"
-                               height="1600"
-                               layout="responsive">
-                             </amp-img>
-                             <figcaption>Zion: Traces of wind and sand</figcaption>
-                           </figure>
-                           <figure class="small">
-                              <amp-img alt="Bryce Canyon"
-                                src="img/Bryce.jpg"
-                                width="1200"
-                                height="1200"
-                                layout="responsive">
-                              </amp-img>
-                              <figcaption>Bryce Canyon: Sentinels and layers</figcaption>
-                            </figure>
-                             <figure class="small">
-                                <amp-img alt="Wire Pass"
-                                  src="img/WirePass2.jpg"
-                                  width="1200"
-                                  height="1600"
-                                  layout="responsive">
-                                </amp-img>
-                                <figcaption>Wire Pass: Slot canyon</figcaption>
-                              </figure>
-                            </figure>
-                             <figure class="small">
-                                <amp-img alt="Craters of the Moon"
-                                  src="img/Splatter.jpg"
-                                  width="1200"
-                                  height="1600"
-                                  layout="responsive">
-                                </amp-img>
-                                <figcaption>Craters of the Moon: Splatter in the cone</figcaption>
-                              </figure>
-                              <figure class="small">
-                                 <amp-img alt="Craters of the Moon"
-                                   src="img/Craters.jpg"
-                                   width="1200"
-                                   height="900"
-                                   layout="responsive">
-                                 </amp-img>
-                                 <figcaption>Craters of the Moon: Mafic lava in Idaho?</figcaption>
-                               </figure>
-                               <figure class="small">
-                                  <amp-img alt="Yellowstone National Park"
-                                    src="img/YHot.jpg"
-                                    width="1200"
-                                    height="900"
-                                    layout="responsive">
-                                  </amp-img>
-                                  <figcaption>Yellowstone Mammoth Hot Springs: Geothermal terraces</figcaption>
-                                </figure>
-                                <figure class="small">
-                                   <amp-img alt="Tetons"
-                                     src="img/Tetons.jpg"
-                                     width="1200"
-                                     height="900"
-                                     layout="responsive">
-                                   </amp-img>
-                                   <figcaption>Grand Tetons: Dramatic uplift</figcaption>
-                                 </figure>
-                                 <figure class="small">
-                                    <amp-img alt="Black Canyon"
-                                      src="img/BlackCanyon.jpg"
-                                      width="900"
-                                      height="1200"
-                                      layout="responsive">
-                                    </amp-img>
-                                    <figcaption>Black Canyon of the Gunnison: Deep cutting of Precambrian rock</figcaption>
-                                  </figure>
-      </p>
     </article>
 </section>
 
-<section id="language" on="expand:language.scrollTo(duration=1000)">
-    <header class="sectionTitle"><h1>Language</h1></header>
-
+<section id="travel" on="expand:travel.scrollTo(duration=1000)">
+    <header class="sectionTitle"><h1>Travel</h1></header>
     <article>
-      <p>EDITING<br><br>
-        Consistently feeling that I had been shorted on my time studying language during my undergraduate degree and continuing to support a passion for grammar,
-        I completed a Certificate in Editing at the University of Washington. After this course of study, I undertook several editing projects, focusing primarily on copyediting and minor structural revision.<br><br>
-        Translated Essays, 2015, by Carmen King<br>
-        Encyclopedia article on the National Museum of African American History and Culture, published online 2015<br>
-        TAKK: Explorations of Nordic Cafe Culture, book published in 2015, by Corey Kingston and Samantha Albert<br>
-        Marketing copyediting at GGN, 2015-2016
-      </p>
-	<p>LINGUISTICS<br><br>
-      I have pursued further education in introductory Linguistics as well, in order to fill the hunger for language that studying editing only created. A 400-level class at Central Washington University in English Linguistics
-      has opened my eyes to the fields of phonology, morphology, syntax, language acquisition, and semantics. My term paper subject for the course focuses on the difference between phonological and morphological perception, production, and resulting communicative word production in infants and children under 5.
-  </p>
     </article>
 </section>
 
-<section id="shows" on="expand:shows.scrollTo(duration=1000)">
-    <header class="sectionTitle"><h1>Shows</h1></header>
-
+<section id="schedule" on="expand:schedule.scrollTo(duration=1000)">
+    <header class="sectionTitle"><h1>Schedule</h1></header>
     <article>
-
-	<p><a href="http://www.studioforurbanprojects.org/calendar/?event_id=779" target="_blank">TACO SHED - STUDIO FOR URBAN PROJECTS</a><br><br>
-	    Begun as a short research project into the biography of a taco, this project investigated how the ingredients of a typical San Francisco street taco pull from a global watershed of ingredients. Together with my fellow classmate Rachael Harvey and our professors from Rebar Studio and David Fletcher, we presented the research and global mapping of ingredient economies at the Studio for Urban Projects. It was subsequently published widely.<br><br>
-	    <a href="http://meatpaper.com/wordpress/2010/04/the-global-tacoshed-do-you-know-where-your-taco-comes-from/" target="_blank">Meatpaper</a><br>
-	    <a href="https://www.good.is/articles/your-taco-deconstructed" target="_blank">Good</a><br>
-	    <a href="http://www.bldgblog.com/2010/02/where-does-your-taco-come-from/" target="_blank">BldgBlog</a>
-
-      <figure class="small">
-        <amp-img alt="Taco Shed Ingredient Origins"
-          src="img/Taco_1.jpg"
-          width="1600"
-          height="1436"
-          layout="responsive">
-        </amp-img>
-        <figcaption>Ingredient Origins</figcaption>
-      </figure>
-      <figure class="small">
-        <amp-img alt="Taco Shed Global Pathways"
-          src="img/Taco_2.jpg"
-          width="1600"
-          height="970"
-          layout="responsive">
-        </amp-img>
-        <figcaption>Sourcing a Global Taco</figcaption>
-      </figure>
-      <figure class="small">
-        <amp-img alt="Taco Shed Ingredients"
-          src="img/Taco_3.jpg"
-          width="2550"
-          height="3300"
-          layout="responsive">
-        </amp-img>
-        <figcaption>Ingredient profile: Avocado</figcaption>
-      </figure>
-      <figure class="small">
-        <amp-img alt="Taco Shed Ingredients"
-          src="img/Taco_4.jpg"
-          width="1275"
-          height="1650"
-          layout="responsive">
-        </amp-img>
-        <figcaption>Ingredient profile: Sour Cream</figcaption>
-      </figure>
-      <figure class="small">
-        <amp-img alt="Taco Shed Ingredients"
-          src="img/Taco_5.jpg"
-          width="1275"
-          height="1650"
-          layout="responsive">
-        </amp-img>
-        <figcaption>Ingredient profile: Aluminum</figcaption>
-      </figure>
-		<figure class="small">
-        <amp-img alt="Taco Shed at SUP"
-          src="img/SUP2.jpg"
-          width="1600"
-          height="800"
-          layout="responsive">
-        </amp-img>
-        <figcaption>Studio for Urban Projects presentation: The Global Resources of a Taco</figcaption>
-      </figure></p>
-
-      <p><a href="https://www.spur.org/exhibitions/2010-07-25/here-and-now-students-show" target="_blank">HERE & NOW 2010 - SPUR</a><br>
-      <figure class="small">
-        <amp-img alt="SPUR HERE & NOW"
-          src="img/here_now_1.jpg"
-          width="1600"
-          height="1800"
-          layout="responsive">
-        </amp-img>
-        <figcaption>Work on the wall</figcaption>
-      </figure>
-      <figure class="small">
-        <amp-img alt="SPUR HERE & NOW"
-          src="img/here_now_2.jpg"
-          width="1600"
-          height="1800"
-          layout="responsive">
-        </amp-img>
-        <figcaption>SPUR event</figcaption>
-      </figure></p>
-
-      <p>LA 2X8 2010
-         <figure class="small">
-        <amp-img alt="LA 2X10"
-          src="img/LA2x10(5).jpg"
-          width="1600"
-          height="2597"
-          layout="responsive">
-        </amp-img>
-        <figcaption>LA 2X8</figcaption>
-      </figure>
-       <figure class="small">
-        <amp-img alt="LA 2X10"
-          src="img/LA2x10(1).jpg"
-          width="1600"
-          height="2309"
-          layout="responsive">
-        </amp-img>
-        <figcaption>LA 2X8</figcaption>
-      </figure></p>
-
-  <p><a href="https://www.cityartsmagazine.com/literary-underground/" target="_blank">PURLIEU HALL</a><br><br>
-	    With a close group of friends, we built an underground literary club and arts space in a historic Seattle building, holding intimate theatre performances, readings, philosophical groups, art shows, and parties!<br>
-	    </figure>
-    <figure class="small">
-        <amp-img alt="Purlieu Hall Band"
-          src="img/Purlieu_Band.jpg"
-          width="1600"
-          height="1200"
-          layout="responsive">
-        </amp-img>
-        <figcaption>Last Performance</figcaption>
-      </figure></p>
     </article>
 </section>
 
-<section id="making" on="expand:making.scrollTo(duration=1000)">
-    <header class="sectionTitle"><h1>Making</h1></header>
-
+<section id="registry" on="expand:registry.scrollTo(duration=1000)">
+    <header class="sectionTitle"><h1>Registry</h1></header>
     <article>
-        <p>DRAWING<br><br>
-          Drawing was my first introduction to art, craft, and architecture. It remains a passion.
-          <figure class="small">
-          <amp-img alt="Pencil Drawings"
-            src="img/Flag.jpg"
-            width="563"
-            height="384"
-            layout="responsive">
-          </amp-img>
-          <figcaption>Pencil and charcoal on paper</figcaption>
-        </figure>
-        <figure class="small">
-        <amp-img alt="Pencil Drawings"
-          src="img/WomanSit.jpg"
-          width="541"
-          height="692"
-          layout="responsive">
-        </amp-img>
-        <figcaption>Pencil on paper</figcaption>
-        </figure>
-        <figure class="small">
-        <amp-img alt="Pencil Drawings"
-          src="img/WomanRecline.jpg"
-          width="563"
-          height="402"
-          layout="responsive">
-        </amp-img>
-        <figcaption>Pencil on paper</figcaption>
-        </figure>
-        <figure class="small">
-        <amp-img alt="Pencil Drawings"
-          src="img/WomanCrouch.jpg"
-          width="563"
-          height="675"
-          layout="responsive">
-        </amp-img>
-        <figcaption>A Rodin pose; pencil on paper</figcaption>
-        </figure>
-        <figure class="small">
-        <amp-img alt="Pencil Drawings"
-          src="img/PtReyes.jpg"
-          width="621"
-          height="360"
-          layout="responsive">
-        </amp-img>
-        <figcaption>Pencil on paper</figcaption>
-        </figure>
-        </p>
-      <p>CRAFT<br><br>
-          We live in a world of "things." We touch, see, feel, and love them. Why not make them beautiful?
-          <figure class="small">
-            <amp-img alt="PAINTED BLOCKS"
-              src="img/Blocks1.jpg"
-              width="3923"
-              height="2794"
-              layout="responsive">
-            </amp-img>
-            <br>
-            <amp-img alt="PAINTED BLOCKS"
-              src="img/Blocks2.jpg"
-              width="2799"
-              height="3284"
-              layout="responsive">
-            </amp-img>
-            <figcaption>Water-based, non-toxic washes of colored paint customized these blocks for a sassy two-year-old.</figcaption>
-          </figure>
-          <figure class="small">
-            <amp-img alt="BABY QUILT MONOTONE"
-              src="img/BabyQuilts1.jpg"
-              width="3024"
-              height="4032"
-              layout="responsive">
-            </amp-img>
-            <br>
-            <amp-img alt="BABY QUILT MONOTONE"
-              src="img/BabyQuilts2.jpg"
-              width="3432"
-              height="3023"
-              layout="responsive">
-            </amp-img>
-            <figcaption>This quilt for two Architect parents had to be the perfect addition to their curated home. Luckily, I nailed the color palette of their living room, and utilized texture fabric to add a playful touch.</figcaption>
-          </figure>
-          <figure class="small">
-            <amp-img alt="BABY QUILT EMBROIDERED"
-              src="img/BabyQuilts3.jpg"
-              width="2809"
-              height="2949"
-              layout="responsive">
-            </amp-img>
-            <br>
-            <amp-img alt="BABY QUILT EMBROIDERED"
-              src="img/BabyQuilts4.jpg"
-              width="1957"
-              height="1357"
-              layout="responsive">
-            </amp-img>
-            <br>
-            <amp-img alt="BABY QUILT EMBROIDERED"
-              src="img/BabyQuilts5.jpg"
-              width="1928"
-              height="1428"
-              layout="responsive">
-            </amp-img>
-            <br>
-            <amp-img alt="BABY QUILT EMBROIDERED"
-              src="img/BabyQuilts6.jpg"
-              width="1919"
-              height="1251"
-              layout="responsive">
-            </amp-img>
-            <figcaption>Shooting for a note of calm in the fray, this black & white two-sided quilt gets its playful touch through tones of pale pink embroidery thread.</figcaption>
-          </figure>
-      </p>
-	<p>GATHERINGS<br><br>
-    Celebration has always been a big part of my life. Big messy parties with lots of food and drink, and all the people you love. I love creating this for other people.<br>
-
-    <figure class="small">
-      Optimism - an airy, welcoming family brewery - provided an ideal space for a casual Baby shower with many friends, including the four-legged kind.<br><br>
-      <amp-img alt="Optimism Baby Shower"
-        src="img/RFShower1.jpg"
-        width="1693"
-        height="1071"
-        layout="responsive">
-      </amp-img>
-      <br>
-      <amp-img alt="Optimism Baby Shower"
-        src="img/RFShower2.jpg"
-        width="1721"
-        height="1039"
-        layout="responsive">
-      </amp-img>
-      <figcaption>All about the salty & sweet snacky things.</figcaption>
-    </figure>
-
-    <figure class="small">
-      Little London Plane provided a beautiful backdrop from a fall Baby Shower, filled with fruits, flowers & friends.<br><br>
-      <amp-img alt="Pioneer Square Baby Shower"
-        src="img/HBShower1.jpg"
-        width="2591"
-        height="3732"
-        layout="responsive">
-      </amp-img>
-      <figcaption>The light-filled space graciously welcomed guests from a cool fall day.</figcaption>
-      <amp-img alt="Pioneer Square Baby Shower"
-        src="img/HBShower2.jpg"
-        width="3927"
-        height="2781"
-        layout="responsive">
-      </amp-img>
-    <figcaption>Apples, ferns, eucalyptus, and flowers dressed the tables.</figcaption>
-      <amp-img alt="Pioneer Square Baby Shower"
-        src="img/HBShower3.jpg"
-        width="2751"
-        height="3535"
-        layout="responsive">
-      </amp-img>
-      <figcaption>Baby photos of the two parents showcased next to the mother-to-be's flower crown.</figcaption>
-      <amp-img alt="Pioneer Square Baby Shower"
-        src="img/HBShower4.jpg"
-        width="3900"
-        height="3013"
-        layout="responsive">
-      </amp-img>
-    <figcaption>Paper flowers and a "Sweet Baby B" banner.</figcaption>
-      <amp-img alt="Pioneer Square Baby Shower"
-        src="img/HBShower6.jpg"
-        width="2967"
-        height="3256"
-        layout="responsive">
-      </amp-img>
-        <figcaption>Take-away gifts: chocolate-covered almonds.</figcaption>
-      <amp-img alt="Pioneer Square Baby Shower"
-        src="img/HBShower5.jpg"
-        width="3738"
-        height="2204"
-        layout="responsive">
-      </amp-img>
-      <figcaption>Guests filled out "Recipe Cards" to wish the parents love and helpful hints in times of need.</figcaption>
-    </figure>
-  </p>
-	<p>FOOD<br><br>
-      The manual process of creating things from earth's abundant bounty is one of the great gifts that I enjoy in life.<br>
-  <figure class="small">
-    <amp-img alt="DRAGON CAKE"
-      src="img/Dragon1.jpg"
-      width="2794"
-      height="2794"
-      layout="responsive">
-    </amp-img>
-  <br>
-      <amp-img alt="DRAGON CAKE"
-        src="img/Dragon2.jpg"
-        width="4032"
-        height="3024"
-        layout="responsive">
-      </amp-img>
-  <br>
-      <amp-img alt="DRAGON CAKE"
-        src="img/Dragon3.jpg"
-        width="4032"
-        height="3024"
-        layout="responsive">
-      </amp-img>
-      <figcaption>Zucchini-Chocolate Dragon Cake, for a five-year-old boy. Almond teeth, green cream-cheese frosting. Fire-breathing, of course. Chocolate shavings and chocolate bark flesh out his scaly exterior.</figcaption>
-    </figure>
-  </p>
-      </article>
+    </article>
 </section>
 
-<section id="about" on="expand:about.scrollTo(duration=1000)">
-    <header class="sectionTitle"><h1>About</h1></header>
-
+<section id="faq" on="expand:faq.scrollTo(duration=1000)">
+    <header class="sectionTitle"><h1>FAQ</h1></header>
     <article>
-      <p>Hello, my name is Annelise, or Annie, Aldrich.<br><br>I love land, language, and the intersection of these things in human culture. To me this extends to fascinations in geology, geography, cognition and linguistics. I want to better understand the human position and our physical world.
-
-  <br><br>I enjoy studying the following topics:
-  <br><br>• the role of humans in shaping the land, and the role of the land in shaping civilizations.
-  <br><br>• the correlations between land forms, rock types, elevation, and continental position.
-  <br><br>• the structures of thinking, learning, and information, and how they are linked together in language and perception.
-  <br><br>I love to learn, build connections between ideas, and understanding new information. I have undertooked coursework in linguistics and editing in order to better understand the nuts and bolts of language.
-  <br><br>I pride myself on my organization skills,  self-starting work ethic, and inclinations toward leadership and teaching. To me, a good team is built on equal participation and investment in the work.
-  <br><br>I am a registered architect with experience designing residential, retail, and hospitality spaces, and I also have experience designing private and public landscapes, urban parks and city plazas. My joy in design comes in the synthesis of human and material considerations. The sociology of an interaction, the geology of a region, and the tectonic of material systems all come together in architecture. I am driven to pursue designs that are reasonable, balanced, prudent and frugal—to me the definition of problem-solving solutions.
-  <br><br>While I was born and raised in Seattle and nothing will ever supplant my love of mountains and water, I have also enjoyed lived in San Francisco, Oakland, New York, Paris, London.</p>
-      </article>
+    </article>
 </section>
 
 </amp-accordion>
