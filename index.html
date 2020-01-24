@@ -183,14 +183,6 @@ button:focus {
     padding:0;
   }
   button {
-      position:fixed;
-      top:0;
-      left:0;
-      background:none;
-      border: none;
-      width:13vh;
-      height:13vh;
-      display: inline-block;
       outline:none;
       z-index:50;
   }
@@ -206,6 +198,16 @@ button:focus {
       transform:rotate(90deg);
       transition:all .3s;
   }
+	#hamburger{
+	position:fixed;
+      top:0;
+      left:0;
+      background:none;
+      border: none;
+      width:13vh;
+      height:13vh;
+      display: inline-block;
+	}
   .container {
     display: block;
     position: relative;
@@ -297,7 +299,7 @@ button:focus {
     <header class="sectionTitle"><h1>RSVP</h1></header>
     <article>
 		<p>Check out the Ranch and Lodging info before submitting the RSVP form below.		
-		<a href="https://docs.google.com/forms/d/e/1FAIpQLSfN1s79wXHtSkZ9eZpOW9kwDCE-QvfIbgKtIJlhawHSaUpTDA/viewform?usp=sf_link" target="_blank"><div class="link"><div class="linkText">CLICK TO RSVP</div></div></a></p>
+		<button class="link" onclick="window.location.href = 'https://docs.google.com/forms/d/e/1FAIpQLSfN1s79wXHtSkZ9eZpOW9kwDCE-QvfIbgKtIJlhawHSaUpTDA/viewform?usp=sf_link';"><div class="linkText">CLICK TO RSVP</div></button></p>
     </article>
 </section>
 
