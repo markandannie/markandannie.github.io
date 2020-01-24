@@ -139,6 +139,7 @@ p.centered {
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
+	  transition:all .2s;
   }
   section[expanded] > .sectionTitle {
     border:none;
@@ -156,6 +157,9 @@ p.centered {
   }
   .sectionTitle:focus{
     outline:none;
+  }
+.sectionTitle:hover{
+    font-weight: 700;
   }
   figure {
     margin:18vh auto;
