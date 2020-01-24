@@ -61,9 +61,11 @@ button:focus {
     padding:0;
   }
   article{
-    margin:0;
     padding:0;
-    background:#f2f2f5;
+
+	margin:18vh auto;
+    width:92%;
+    max-width:800px;
   }
   .title{
     position:absolute;
@@ -105,9 +107,7 @@ button:focus {
   }
   p{
     font-size: 2vh;
-    margin:18vh auto;
-    width:92%;
-    max-width:800px;
+
     font-weight:300;
     color:#16161d;
   }
@@ -242,6 +242,13 @@ button:focus {
     -ms-user-select: none;
     user-select: none;
   }
+	.link{
+		color:#fff;
+		background:#16161d;
+		width:200px;
+		height:120px;
+		text-align: center;
+	}
 </style>
 </head>
 
@@ -277,7 +284,7 @@ button:focus {
     <article>
 		<p>Check out the Ranch and Lodging info before submitting the RSVP form below.
 		</p>
-		<button id="RSVP">Click to RSVP</button>
+		<div class="link">Click to RSVP</div>
     </article>
 </section>
 
