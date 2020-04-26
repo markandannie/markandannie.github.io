@@ -3,13 +3,9 @@
 <head>
 <meta charset="utf-8">
 <script async src="https://cdn.ampproject.org/v0.js"></script>
-<script async custom-element="amp-accordion" src="https://cdn.ampproject.org/v0/amp-accordion-0.1.js"></script>
-<script async custom-element="amp-sidebar" src="https://cdn.ampproject.org/v0/amp-sidebar-0.1.js"></script>
-<script async custom-element="amp-iframe" src="https://cdn.ampproject.org/v0/amp-iframe-0.1.js"></script>
-<script async custom-element="amp-youtube" src="https://cdn.ampproject.org/v0/amp-youtube-0.1.js"></script>
 <title>M  &nbsp;&nbsp;●&nbsp;&nbsp;  A</title>
 <link rel="canonical" href="https://markandannie.camp">
-<meta name="description" content="Come celebrate with us!">
+<meta name="description" content="Don't come celebrate with us!">
 <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
 <link href="https://fonts.googleapis.com/css?family=Montserrat:300,500" rel="stylesheet">
 <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
@@ -128,49 +124,6 @@ p.centered {
   amp-img.cover img {
     object-fit: cover;
   }
-  .sectionTitle{
-    height:6.5vh;
-    line-height:6.5vh;
-    text-align: center;
-    vertical-align: middle;
-    width:100%;
-    margin:0;
-    color:#fff;
-    background:none;
-    border-top:none;
-    border-bottom: .3px solid #ddd;
-    border-left: calc(50vw - 14vh) solid transparent;
-    border-right: calc(50vw - 14vh) solid transparent;
-    box-sizing: border-box;
-    z-index:10;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-  }
-  section[expanded] > .sectionTitle {
-    border:none;
-    background:#fff;
-    color:#16161d;
-    border-bottom: .3px solid #ddd;
-    border-left: calc(50vw - 14vh) solid transparent;
-    border-right: calc(50vw - 14vh) solid transparent;
-    outline:none;
-  }
-section[expanded] > .sectionTitle > h1{
-    font-weight:500;
-  }
-  section:hover > .sectionTitle{
-    background:#fff;
-    color:#16161d;
-    outline:none;
-  }
-    section:hover > .sectionTitle > h1{
-    font-weight:500;
-  }
-  .sectionTitle:focus{
-    outline:none;
-  }
   figure {
     margin:0 auto 8vh auto;
     width:92%;
@@ -182,12 +135,6 @@ section[expanded] > .sectionTitle > h1{
     .lodging{
         margin-bottom:14px;
     }
-  amp-sidebar{
-    width: 37vh;
-    background:#fff;
-    margin:0;
-    padding:0;
-  }
   button {
       outline:none;
       z-index:50;
@@ -206,14 +153,6 @@ section[expanded] > .sectionTitle > h1{
       transform:rotate(90deg);
       transition:all .3s;
   }
-	#hamburger{
-	position:fixed;
-      top:0;
-      left:0;      
-      width:13vh;
-      height:13vh;
-      display: inline-block;
-	}
   .container {
     display: block;
     position: relative;
@@ -256,319 +195,18 @@ section[expanded] > .sectionTitle > h1{
     -ms-user-select: none;
     user-select: none;
   }
-amp-iframe{
-    margin:0 auto 8vh auto;
-    width:92%;
-    max-width:800px;
-    overflow: hidden;
-    border-radius: 4px;
-}
 </style>
 </head>
 
 
 <body>
 
-<amp-sidebar id="sidebar1" layout="nodisplay" side="left" on="sidebarClose:hamburger.toggleClass(class=clicked)">
-  <a class="container" href="#rsvp" on="tap:accordion.expand(section='rsvp'),rsvp.scrollTo(duration=700)"><h1>RSVP</h1></a>
-  <a class="container" href="#ranch" on="tap:accordion.expand(section='ranch'),ranch.scrollTo(duration=700)"><h1>The Ranch</h1></a>
-  <a class="container" href="#lodging" on="tap:accordion.expand(section='lodging'),lodging.scrollTo(duration=700)"><h1>Lodging</h1></a>
-  <a class="container" href="#travel" on="tap:accordion.expand(section='travel'),travel.scrollTo(duration=700)"><h1>Getting Around</h1></a>
-  <a class="container" href="#schedule" on="tap:accordion.expand(section='schedule'),schedule.scrollTo(duration=700)"><h1>Schedule</h1></a>
-  <a class="container" href="#registry" on="tap:accordion.expand(section='registry'),registry.scrollTo(duration=700)"><h1>Registry</h1></a>
-  <a class="container" href="#faq" on="tap:accordion.expand(section='faq'),faq.scrollTo(duration=700)"><h1>FAQ</h1></a>
-  <div class="contact"><a href="mailto:hi@markandannie.camp?Subject=Howdy" target="_blank"><h1>hi@markandannie.camp</h1></a></div>
-</amp-sidebar>
-
-<header>
-  <button id="hamburger" on="tap:sidebar1.toggle, hamburger.toggleClass(class=clicked)">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" role="presentation"><rect x="30" y="47" width="40" height="6" rx="1" ry="1"/><rect x="30" y="36.691" width="40" height="6" rx="1" ry="1"/><rect x="30" y="57.309" width="40" height="6" rx="1" ry="1"/></svg>
-  </button>
-</header>
-<div class="title" role="button" tabindex="1" on="tap:sidebar1.toggle, hamburger.toggleClass(class=clicked)">M &nbsp;&nbsp;<div id="dot">●</div>&nbsp;&nbsp; A<div class="titleThin"><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;25 July<br><br>*** COVID-19 UPDATE: We are carefully watching the development of coronavirus, and are taking its impacts very seriously. In the coming weeks we will assess whether this celebration can continue as planned. Please plan accordingly.</div></div>
+<div class="title" role="button" tabindex="1">M &nbsp;&nbsp;<div id="dot">●</div>&nbsp;&nbsp; A<div class="titleThin"><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CANCELED<br><br>*** COVID-19 UPDATE: WEDDING CANCELED.<br><br>Sadly, we feel the only responsible course of action is to cancel our wedding celebration. Please cancel your flight and lodging reservations. If you reserved a cabin / tent at Flying Horseshoe, you don't have to do anything.<br><br>We tentatively think we will have a small ceremony at Annie's family cabin in July, and look forward to sharing that moment with you in a way that makes sense. Thank you to all the wonderful friends and family who volunteered to help with the wedding celebration, and who wished us a joyous marriage. It will be, but done in a slightly different way. Stay healthy, we love you!</div></div>
 <div class="spacer" id="topPage"></div>
 <div class="background">
   <amp-img alt="Background" src="img/background.jpg" layout="fill"></amp-img>
 </div>
 
-<amp-accordion id="accordion" disable-session-states expand-single-section>
 
-<section id="rsvp" on="expand:rsvp.scrollTo(duration=700)">
-    <header class="sectionTitle"><h1>RSVP</h1></header>
-    <article><p class="centered">BEFORE YOU START: check out the <a on="tap:accordion.expand(section='ranch'),ranch.scrollTo(duration=700)">Ranch</a> and <a on="tap:accordion.expand(section='lodging'),lodging.scrollTo(duration=700)">Lodging</a> info.<br> 
-You will lose your progress if you click away from this form.</p>	
-        <amp-iframe width="800" height="1000" sandbox="allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox allow-forms allow-presentation allow-top-navigation allow-downloads-without-user-activation" layout="responsive" frameborder="0" style="border:0" src="https://docs.google.com/forms/d/e/1FAIpQLScY_cKpTUQ5zNgBC1xNSfcEbtxXnZ7B7Ul2T7auZUfQtAmtUw/viewform?embedded=true">
-        </amp-iframe>
-    </article>
-</section>
-
-<section id="ranch" on="expand:ranch.scrollTo(duration=700)">
-    <header class="sectionTitle"><h1>The Ranch</h1></header>
-    <article>
-	<p>We recently chose the town of Roslyn as the site for our first home.<br>
-	And 10 miles to the east you can find <a href="https://www.flyinghorseshoeranch.com/" target="_blank">Flying Horseshoe Ranch</a>.<br><br>
-        Annie attended summer horse camp here as a kid, and experienced her first taste of the open Ponderosa forest, rolling hills, and Kittitas Valley fields. The ranch has been family owned since the 1950s, shifting from a kids camp to a guest ranch about 15 years ago. Their property enjoys views of the Teanaway Valley and includes 100+ acres of forested trails up the hill—ample space to roam.</p>
-
-   <a href="https://markandannie.camp/img/map2.jpg" target="_blank"><figure class="small">
-	<amp-img alt="Ranch Map"
-	  src="img/map2.jpg"
-	  width="2500"
-	  height="2715"
-	  layout="responsive">
-	</amp-img>
-  </figure></a>
-		
-	<p class="centered"><a href="https://goo.gl/maps/7uuvrK9YYHCSCu8e7" target="_blank">3190 Red Bridge Rd, Cle Elum WA 98922</a><br><br>
-        See the <a on="tap:accordion.expand(section='lodging'),lodging.scrollTo(duration=700)">Lodging</a> section for more info about where to stay.<br>
-        <a href="https://forecast.weather.gov/MapClick.php?lat=47.194&lon=-120.9331&unit=0&lg=english&FcstType=graphical" target="_blank">Local Weather</a></p>
-        
-    <figure class="small">
-	<amp-img alt="Ranch Vibes"
-	  src="img/vibe.jpg"
-	  width="1600"
-	  height="600"
-	  layout="responsive">
-	</amp-img>
-  </figure>
-    </article>
-</section>
-
-<section id="lodging" on="expand:lodging.scrollTo(duration=700)">
-    <header class="sectionTitle"><h1>Lodging</h1></header>
-    <article>
-		<p>Flying Horseshoe Ranch sleeps about 100 people, and we would love to fill every bed!<br>
-           Accommodations range from bunk houses to canvas tents, all while maintaining a rustic environment with shared bathrooms and nature all around.<br><br>ON-RANCH OFFERINGS:</p>
-            <figure class="lodging">
-            <amp-img alt="Bunk Cabin"
-              src="img/bunk.jpg"
-              width="1200"
-              height="450"
-              layout="responsive">
-            </amp-img>
-          </figure>
-        <p>
-            <b>Shared Bunk Cabins</b> (9)<br>
-            Located in main camp area.<br>
-            12'x14' cabin with bunk beds for 8 people.<br>
-            Bring your sleeping bag and pillow (or ask us about rentals).<br>
-            Use the shared bath houses nearby.</p>
-            <figure class="lodging">
-            <amp-img alt="Wrangler Cabin"
-              src="img/wrangler.jpg"
-              width="1200"
-              height="450"
-              layout="responsive">
-            </amp-img>
-          </figure>
-        <p>
-            <b>Wrangler Cabins</b> (2)<br>
-            Located in the main camp area.<br>
-            12'x14' cabin.<br>
-            One queen bed and two twin beds, bunked (pillows & bedding included).<br>
-            Use the shared bath houses nearby.</p>
-        <figure class="lodging">
-            <amp-img alt="Log Cabin"
-              src="img/logcabin.jpg"
-              width="1200"
-              height="450"
-              layout="responsive">
-            </amp-img>
-          </figure>
-        <p>
-            <b>Log Cabin</b> (1)<br>
-            Located on the hill (0.7 miles from main camp), accessible by car or foot.<br>
-            22'x24' cabin with kitchen, full bathroom, and outdoor hot tub.<br>
-            Open loft with one queen bed and four twin beds (pillows & bedding included).</p>
-        <figure class="lodging">
-            <amp-img alt="Canvas Tent"
-              src="img/tent.jpg"
-              width="1200"
-              height="450"
-              layout="responsive">
-            </amp-img>
-          </figure>
-        <p>
-            <b>Canvas Tents</b> (2)<br>
-            Located on the hill (0.7 miles from main camp), accessible by car or foot.<br>
-            16'x14' canvas tent on a redwood deck.<br>
-            One queen bed (pillows & bedding included).<br>
-            Outhouse on hill, and shower at the shared bath houses at main camp.</p>
-        <figure class="lodging">
-            <amp-img alt="Tipi"
-              src="img/tipi.jpg"
-              width="1200"
-              height="450"
-              layout="responsive">
-            </amp-img>
-          </figure>
-        <p>
-            <b>Tipis</b> (4)<br>
-            Located on the hill (0.7 miles from main camp), accessible by car or foot.<br>
-            16' diameter Sioux-style tipis, lit by lantern.<br>
-            Four twin beds.<br>
-            Bring your sleeping bag and pillow (or ask us about rentals).<br>
-            Outhouse on hill, and shower at the shared bath houses at main camp.<br><br><br><br><br>
-            CAMPERS:
-        </p>
-        <amp-iframe width="400" height="350" scrolling="no" sandbox="allow-scripts allow-same-origin allow-popups-to-escape-sandbox" layout="responsive" frameborder="0" src="https://docs.google.com/spreadsheets/d/1RqcxKzCF0Ivl8POrDgDYwHZtYG9OHnNwdknDsHpDUwo/htmlembed/sheet?gid=1014832229">
-        </amp-iframe>
-		<p>
-        Note:<br>
-            > Tent camping is also encouraged. There is a nice flat area near the pool / parking.<br> 
-            > If your booking does not include linens, <a href="mailto:hi@markandannie.camp?Subject=Bedding" target="_blank">let us know</a> and we can help you procure them.<br>
-            > The tents & tipis on the bluff are outhouse-only. Shower in the shared bath houses at camp below.<br>
-            > <a on="tap:accordion.expand(section='rsvp'),rsvp.scrollTo(duration=700)">RSVP</a> to book your stay on the ranch!<br><br><br><br>
-        OFF-SITE OPTIONS:<br><br>
-            If you must stay off-site, check out our suggestions below. We encourage booking in Roslyn, Ronald, or Cle Elum to promote ride-sharing. Roslyn is a lovely town to explore, and it hosts a Sunday Farmer’s market. Ronald is just west nearer to Lake Cle Elum, and offers many seasonal rentals. Also look at Suncadia for multi-bedroom houses for larger groups.<br><br>
-            Worth a look:<br> 
-            <a href="https://goo.gl/maps/hxVo7CHoqjj6w9RH8" target="_blank">Hotel Roslyn</a>: we have reserved four rooms for family (  get in touch if interested).<br>
-            <a href="https://goo.gl/maps/DSnXhBNVE59wk3uPA" target="_blank">Spruce Moose Inn</a>: downtown Roslyn.<br>
-            <a href="https://goo.gl/maps/gXPy9jBLSgFdEEDV7" target="_blank">Huckleberry House</a>: historic Roslyn inn.<br>
-            <a href="https://goo.gl/maps/3SUuDWnjgEfCxTRx6" target="_blank">Iron Horse Inn</a>: sleep in a train caboose.<br>
-            <a href="https://goo.gl/maps/wKuda9Y4wzj1EJsdA" target="_blank">Suncadia Lodge</a>: golf course luxe.<br>
-            <a href="https://goo.gl/maps/F7W9yKqWi2wyLBZaA" target="_blank">Best Western</a>: Cle Elum.<br>
-            Also search <a href="https://www.airbnb.com/s/Roslyn--WA--United-States/homes?refinement_paths%5B%5D=%2Fhomes&current_tab_id=all_tab&selected_tab_id=all_tab&search_type=unknown&screen_size=large&hide_dates_and_guests_filters=false&ne_lat=47.27768233098421&ne_lng=-120.86809181300254&sw_lat=47.12185902082681&sw_lng=-121.053142777358&zoom=12&search_by_map=true" target="_blank">Airbnb</a>, <a href="https://www.vrbo.com/search/keywords:roslyn-wa-usa/arrival:2020-07-24/departure:2020-07-26?adultsCount=2&petIncluded=false&dclid=CjkKEQiAgqDxBRDBw-D7-9uStZQBEiQA0SIDEu1lbs2_qKWYKm3IICFsra6XSMuu9UxV0LBISlPh6-Pw_wcB&gx-currency=USD&ha_t=2020:07:24:2020:07:26:2:::::::USD:565.51::175.51:&ksdevice=desktop&utm_campaign=google:US:vrbo&utm_content=US:vrbo:321.485655.1068836:desktop:en::USD:&utm_medium=partner&utm_source=meta_hotelads&utm_term=20954008%7C221197038%7C100090425%7C419403672" target="_blank">Vrbo</a>, and <a href="https://www.vacationrental365.com/rental/alpha" target="_blank">VR365</a>.
-</p>
-    </article>
-</section>
-
-<section id="travel" on="expand:travel.scrollTo(duration=700)">
-    <header class="sectionTitle"><h1>Getting Around</h1></header>
-    <article>
-        <p>TRAVEL:<br><br>
-            > Fly in to <a href="https://www.portseattle.org/sea-tac" target="_blank">SeaTac</a> (SEA).<br>
-            > Take the <a href="https://www.soundtransit.org/ride-with-us/stations/link-light-rail-stations" target="_blank">LINK</a> to Seattle.<br>
-            > Ride the <a href="https://airporter.com/shuttle/schedules/yakima-to-sea-tac/" target="_blank">Airporter shuttle</a> from SeaTac to Cle Elum (10 minutes from Flying Horseshoe Ranch). We can help organize pick-ups from Cle Elum.<br>
-            > Rent a car. This is the most convenient and scenic way to travel WA (except in Seattle's traffic).<br>
-            > See WA by float plane with <a href="https://www.kenmoreair.com/" target="_blank">Kenmore Air</a>.<br><br>
-            Taxis near Flying Horseshoe Ranch:<br>
-            <a href="https://kccabellensburg.com/" target="_blank">K.C. Cab</a>:&nbsp;&nbsp; 509 929 3055<br>
-            <a href="https://rodeo-town-taxi-llc.business.site/" target="_blank">Rodeo Town Taxi</a>:&nbsp;&nbsp; 509 929 4222<br>
-            Uber & Lyft<br><br><br>
-            EXPLORE WA:<br><br>
-            We love WA and want to share it with all you out-of-staters.<br>Check out the map of our top-tier sightseeing destinations, hikes, and scenic drives.<br> <a href="https://www.google.com/maps/d/viewer?mid=10eAS31R--V5vUk8w6CcqVqAqBmJ_Hbjm&ll" target="_blank">Fullscreen for full experience</a> (links and stuff).
-        </p>
-        <amp-iframe width="800" height="800" sandbox="allow-modals allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox allow-presentation allow-top-navigation allow-downloads-without-user-activation" layout="responsive" frameborder="0" src="https://www.google.com/maps/d/embed?mid=10eAS31R--V5vUk8w6CcqVqAqBmJ_Hbjm">
-        </amp-iframe>
-        <p>Annie LOVES to make recommendations, so <a href="mailto:hi@markandannie.camp?Subject=Touring" target="_blank">let us know</a> if you plan to tour WA!<br><br>She also loves geology. A must-watch before you explore Washington:</p>
-        
-        <figure class="small"><amp-youtube
-          data-videoid="VQhjkemEyUo"
-          layout="responsive"
-          width="480"
-          height="270"
-            data-param-modestbranding=1
-        data-param-rel=0
-        ></amp-youtube></figure>
-        
-        <figure class="small"><amp-youtube
-          data-videoid="F8zLwXfxS7w"
-          layout="responsive"
-          width="480"
-          height="270"
-            data-param-modestbranding=1
-        data-param-rel=0
-        ></amp-youtube></figure>
-        
-        <figure class="small"><amp-youtube
-          data-videoid="NcreTTI9Rew"
-          layout="responsive"
-          width="480"
-          height="270"
-            data-param-modestbranding=1
-        data-param-rel=0
-        ></amp-youtube></figure>
-        
-        <p><a href="http://www.nickzentner.com/" target="_blank">Nick's website here</a>. Be sure to check out his podcast.</p>
-    </article>
-</section>
-
-<section id="schedule" on="expand:schedule.scrollTo(duration=700)">
-    <header class="sectionTitle"><h1>Schedule</h1></header>
-    <article>
-        <p class="centered">FRIDAY<br>
-        3pm...........................................Fun in the Sun<br>
-        5pm……………………………............................Supper<br>
-        6pm........................Campfire and S'mores<br>
-        10pm.............................................Glow Frisbee<br><br>
-        SATURDAY<br>
-        9am........................Breakfast for Campers<br>
-        11am............................................Group Activity<br>
-        3pm................................................................Snack<br>
-        5pm...........................<b>Wedding Ceremony</b><br>
-        6pm.....................................................Reception<br>
-        11pm......................................................Campfire<br><br>
-        SUNDAY<br>
-        10am..........................................................Tidy-up<br>
-        11am..........................................Depart Ranch<br>
-        12pm..........................................................Brunch<br>
-        12pm.................<a href="http://roslynfarmersmarket.org/" target="_blank">Roslyn Farmer's Market</a><br>
-        2pm..........................Meet at <a href="https://goo.gl/maps/j9vLN5aDKGGfuPyX6" target="_blank">M+A's House</a><br>
-        </p>
-    </article>
-</section>
-
-<section id="registry" on="expand:registry.scrollTo(duration=700)">
-    <header class="sectionTitle"><h1>Registry</h1></header>
-    <article>
-        <figure class="lodging">
-            <amp-img alt="Horses"
-              src="img/horse.jpg"
-              width="1800"
-              height="1000"
-              layout="responsive">
-            </amp-img>
-          </figure>
-        <amp-iframe width="800" height="800" sandbox="allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox allow-forms allow-presentation allow-top-navigation allow-downloads-without-user-activation" layout="responsive" frameborder="0" style="border:0" src="https://docs.google.com/forms/d/e/1FAIpQLSf9suax9E9gVaFC235oOiWUfBG1irwIoqTQNFo_BvQ08DVQqA/viewform?embedded=true">
-        </amp-iframe>
-    </article>
-</section>
-
-<section id="faq" on="expand:faq.scrollTo(duration=700)">
-    <header class="sectionTitle"><h1>FAQ</h1></header>
-    <article>
-        <p><em>COVID-19!?!?</em><br>
-            We are carefully watching the development of coronavirus, and are taking its impacts very seriously. In the coming weeks we will assess whether this celebration can continue as planned. Please plan accordingly.<br><br>
-			
-			<em>Where are Mark and Annie staying?</em><br>
-            Flying Horseshoe Ranch!<br><br>
-            
-            <em>What should I pack?</em><br>
-            Sunblock, water bottle, bathing suit, and your dancing shoes.<br>
-            Towel, hat, hiking shoes, toiletries, ear plugs.<br>
-            If you stay on the ranch, you may need to bring your own pillow and bedding (depending on the booking). See <a on="tap:accordion.expand(section='lodging'),lodging.scrollTo(duration=700)">Lodging</a> for more info.<br><br>
-            
-            <em>I need a pillow and bedding!</em><br>
-            We have a local rental hookup for pillows, pillow cases, sleeping bags, liners, and towels.<br>
-            <a href="mailto:hi@markandannie.camp?Subject=Bedding" target="_blank">Let us know</a> what you need and we'll make sure it's here when you arrive.<br><br>
-            
-            <em>When should I arrive?</em><br>
-            We are partying all weekend, from Friday afternoon to Sunday. The ceremony is at 5pm on Saturday. Check out the <a on="tap:accordion.expand(section='schedule'),schedule.scrollTo(duration=700)">Schedule</a> for more info.<br><br>
-            
-            <em>Can I bring my kids?</em><br>
-            Yes! Plan accordingly if they will be sleeping at the ranch (travel crib or their own bunk bed, etc.). They would be welcome at every activity and would have a great time!<br><br>
-            
-            <em>Can I bring my dog?</em><br>
-            Sorry, but the ranch host has requested no dogs.<br>
-            Check out <a href="https://goo.gl/maps/J8r6MVTXRfjnWFu39" target="_blank">Waggin Tails Ranch</a> or <a href="https://goo.gl/maps/NERGmT8yaWMgUn9v6" target="_blank">Bord & Pillar Pet Resort</a> for boarding.<br><br>
-            
-            <em>What is the dress code?</em><br>
-            No camp uniforms required! And no ties required either! For Saturday night, let's call it a "dressy-casual garden party." Otherwise, it'll be a warm, sunny weekend so bring your best casual, festive garb. The grounds have grass, gravel, and uneven surfaces, so please adjust your footwear accordingly. <br><br>
-            
-            <em>Can I bring my own tent? What about my RV?</em><br>
-            Yes, and yes! Just set up on the flat area south of the parking lot (see <a on="tap:accordion.expand(section='ranch'),ranch.scrollTo(duration=700)">ranch map</a>).<br><br>
-            
-            <em>Any flora or fauna to watch out for?</em><br>
-            <a href="https://wdfw.wa.gov/species-habitats/species/puma-concolor" target="_blank">Mountain Lions</a>, <a href="http://www.californiaherps.com/noncal/northwest/nwsnakes/pages/c.o.oreganus.html" target="_blank">Northern Pacific Rattlesnakes</a>, <a href="https://wdfw.wa.gov/species-habitats/species/ursus-americanus" target="_blank">Black Bears</a>.<br>Don't leave any food in the cabins.<br>Also avoid <a href="https://www.dermrochester.com/blog/how-to-tell-the-difference-between-poison-ivy-poison-oak-and-poison-sumac/" target="_blank">Poison Ivy and Poison Sumac</a>.<br><br>
-            
-            <em>Do you have a registry?</em><br>
-            Yes, sort of. The greatest gift you can give us is your presence and your help. We’d love to keep the camp vibe going with lots of participation, and would appreciate any help you can offer! Check out the <a on="tap:accordion.expand(section='registry'),registry.scrollTo(duration=700)">Registry</a> section for more info.
-        </p>
-         <amp-iframe width="800" height="440" sandbox="allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox allow-forms allow-presentation allow-top-navigation allow-downloads-without-user-activation" layout="responsive" frameborder="0" style="border:0" src="https://docs.google.com/forms/d/e/1FAIpQLSeO7atb7qmVwpfFhy7QkIyBonegprDB4PtPI95sIXmkW--VLw/viewform?embedded=true">
-        </amp-iframe>
-    </article>
-</section>
-
-</amp-accordion>
 </body>
 </html>
